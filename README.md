@@ -1,6 +1,6 @@
 <h1 align="center">"Todo List"</h1>
 
-<img src="./readme_assets/app-screen.png" width="100%">
+<img src="./readme-assets/app-screen.png" width="100%">
 
 # Описание
 "Todo List" - это блокнот, в который можно записывать задачи и контролировать
