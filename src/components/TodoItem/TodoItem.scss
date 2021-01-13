@@ -1,0 +1,126 @@
+.container {
+    display: block;
+    position: relative;
+    padding-left: 24px;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+    height: 24px;
+
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+
+        &:checked ~ .checkmark {
+            background-color: #FFFFFF;
+
+            &:after {
+                display: block;
+            }
+        }
+    }
+
+    .checkmark:after {
+        left: 7px;
+        top: 4px;
+        width: 5px;
+        height: 10px;
+        border: solid #333333;
+        border-width: 0 3px 3px 0;
+        transform: rotate(45deg);
+    }
+}
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    background: rgba(255, 255, 255, 1e-05);
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    box-sizing: border-box;
+    border-radius: 2px;
+
+    &:focus {
+        border: 2px solid #1D85D0;
+    }
+
+    &:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    position: relative;
+
+    .container {
+        flex: 0;
+    }
+}
+
+.todo-item__text-content {
+    font-family: "Segoe UI";
+    margin-left: 40px;
+    margin-right: 40px;
+    display: inline-block;
+    line-height: 22px;
+    font-size: 16px;
+    flex: 4;
+}
+
+.todo-item__difficulty {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    line-height: 22px;
+    font-family: "Segoe UI";
+    font-weight: bold;
+}
+
+.todo-item__delete-button {
+    background: url("../../icons/trash.svg") no-repeat;
+    background-size: 24px 24px;
+    height: 24px;
+    width: 24px;
+    border: none;
+    opacity: 0.3;
+
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .container {
+        top: -5px;
+    }
+
+    .todo-item__difficulty {
+        flex: unset;
+        display: inline-block;
+        justify-content: unset;
+        position: absolute;
+        bottom: 0;
+        left: 60px;
+        font-size: 14px;
+    }
+
+    .todo-item__text-content {
+        margin-right: 20px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+    }
+
+    .todo-item__delete-button {
+        margin-top: -12px;
+    }
+}

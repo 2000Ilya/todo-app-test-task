@@ -1,0 +1,57 @@
+.form_radio_group {
+	display: inline-block;
+    overflow: hidden;
+    padding: 1px;
+    height: fit-content;
+    border-radius: 2px;
+    white-space: nowrap;
+    
+    input[type=radio] {
+        display: none;
+
+        &:checked + label {
+            box-shadow: rgba(0, 0, 0, 0.6) 0px 0px 0px 1px, rgba(0, 0, 0, 0.3) 0px 1px 2px 0px inset;
+            background: rgb(115, 115, 115);
+            color: rgb(255, 255, 255);
+            border: none;
+        }
+    }
+
+    label {
+        display: inline-block;
+        cursor: pointer;
+        box-sizing: border-box;
+        padding: 7px 16px;
+        height: 38px;
+        line-height: 22px;
+        background: linear-gradient(rgb(255, 255, 255), rgb(235, 235, 235));
+        color: rgb(64, 64, 64);
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 0px 0px, rgba(0, 0, 0, 0.15) 0px 0px 0px 1px;
+        border: none;
+        font-size: 16px;
+        font-family: "Segoe UI";
+
+        &:hover {
+            background: linear-gradient(rgb(242, 242, 242), rgb(223, 223, 223));
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 0px 0px, rgba(0, 0, 0, 0.2) 0px 0px 0px 1px;
+            border-color: transparent;
+        }
+    }
+
+    .form_radio_group-item {
+        display: inline-block;
+
+        &:not(:first-child) {
+            margin-left: 1px;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .form_radio_group {
+        label {
+            font-size: 14px;
+            padding: 7px 10px;
+        }
+    }
+}

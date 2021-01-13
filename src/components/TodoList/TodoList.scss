@@ -1,0 +1,18 @@
+.todo-list {
+    width: 768px;
+}
+
+hr {
+    width: 766px;
+}
+
+@media screen and (max-width: 767px) {
+    .todo-list {
+        width: 100%;
+        margin-bottom: 125px;
+    }
+    
+    hr {
+        width: calc(100% - 30px);
+    }
+}
