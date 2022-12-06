@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/todo-app-test-task/static/css/main.bf6b6dbc.css",
+    "main.js": "/todo-app-test-task/static/js/main.e19b09a9.js",
+    "static/media/SegoeUI.ttf": "/todo-app-test-task/static/media/SegoeUI.1c5a6bfd4ec7a1bbe4ac.ttf",
+    "static/media/close.svg": "/todo-app-test-task/static/media/close.5bec4f69e1bbfff50fdf.svg",
+    "static/media/trash.svg": "/todo-app-test-task/static/media/trash.bb8494aa5012241b9691.svg",
+    "index.html": "/todo-app-test-task/index.html",
+    "main.bf6b6dbc.css.map": "/todo-app-test-task/static/css/main.bf6b6dbc.css.map",
+    "main.e19b09a9.js.map": "/todo-app-test-task/static/js/main.e19b09a9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf6b6dbc.css",
+    "static/js/main.e19b09a9.js"
+  ]
+}
